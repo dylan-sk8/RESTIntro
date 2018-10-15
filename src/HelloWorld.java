@@ -33,7 +33,7 @@ public class HelloWorld {
 
     @GET
     @Path("/module")
-    @Produces("text/plain")
+    @Produces("text/plain; charset=UTF-8")
     public String getModuleByID(@QueryParam("key") Integer id) {
         String csvFile = "C:/Users/dylan.montando/Desktop/GitDirectory/rest_glassfish_hello_world/src/modules.csv";
         String line = "";
